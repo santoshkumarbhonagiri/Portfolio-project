@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sam.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+            <div class="nav_toggle">
+                    <a href="#">&#x2630;</a>
+            </div>
+        <div class="logo">
+            <!-- <h2>Portfolio</h2> -->
+            <img src="images\portfolio.png" alt="logo">
+        </div>
+        <div class="nav">
+            <ul class="nav-item">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#about" id="abt">About</a></li>
+                <li><a href="#ws" id="w_s">Work Samples</a></li>
+                <li><a href="#contact" id="cnt">Contact</a></li>
+            </ul>
+        </div>
+        <div class="name">
+            <h3>Santosh Kumar</h3>
+            <p>Front-End Developer</p>
+        </div>
+    </div>
+
+    <!-- intro body -->
+    <div class="container">
+        <center>
+            <div class="pic">
+                <img src="images\santosh.jpg" alt="image">
+            </div>
+        </center>
+            <div class="intro">
+
+                <h2 class="heading" id="about">About Me</h2>
+
+                <!-- <p>
+                </p>
+                <p></p><br>
+                <p><br/>
+                     <br/>
+                     <span></span</span>.<br/>
+
+                </p>
+                <p>
+                    Getting Udacity Google-India Challange Scholarship for Nanodegree in Web Front-End Development is a great oppertunity to learn and meet new people in Slack and forum.
+                </p> -->
+
+                <ul>
+                    <li>Graduate in Computer science Engineering</li>
+                    <li>Student of the Year 2018</li>
+                    <li>Awarded for Best Project </li>               </ul>
+            </div>
+    </div>
+
+    <!-- work profile -->
+    <div class="container2">
+        <h2 id="ws"> Work Samples</h2>
+        <div class="wrapper">
+            <div class="s s1">
+                <h3>Animal Trading Card</h3>
+                <a href="https://codepen.io/santoshkumarbhonagiri/full/QrmGzv/" target="_blank"><img src="images/art-artist-artistic-316465.jpg" alt="sample1" ></a>
+            </div>
+            <div class="s s2">
+                <h3>Mark Up Article</h3>
+                <a href="https://codepen.io/santoshkumarbhonagiri/full/ELEWYV/" target="_blank"><img src="images/air-aircraft-blue-sky-336232.jpg" alt="sample2"></a>
+            </div>
+            <div class="s s3">
+                <h3>Pixel Art</h3>
+                <a href="https://codepen.io/santoshkumarbhonagiri/full/VxraWe/" target="_blank"><img src="images/apple-computer-cup-7974.jpg" alt="sample3"></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foo">
+        <h3 id="contact">Links To Follow Me</h3>
+        <a href="https://www.linkedin.com/in/santosh-kumar-bhonagiri-373a6b111"><img class="icon linkedin" src="images/in.png" alt="linkedin"></a>
+        <a href="https://github.com/santoshkumarbhonagiri"><img class="icon git" src="images/github.png"></a>
+        <a href="https://codepen.io/santoshkumarbhonagiri/#"><img class="icon codepen" src="images/code.png" alt="codepen"
+    </footer>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+
+    <script>
+
+        const btn = $(".nav_toggle");
+        const menu = $(".nav-item");
+
+        btn.click(function(){
+            menu.slideToggle();
+        });
+
+    // if($(window).width()>1024){
+    //     menu.css({"display":"block"});
+    // }
+
+     $(window).resize(function() {
+  if ($(window).width() < 1024) {
+    menu.css({"display":"none"});
+  }
+ else {
+    menu.css({"display":"block"});
+ }
+});
+
+
+    </script>
+
+
+</body>
+</html>
